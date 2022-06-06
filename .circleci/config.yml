@@ -173,7 +173,6 @@ workflows:
     jobs:
       # - main:
       #     context: DOCKERHUB_TOKEN
-      {{workflows()}}
       - binary_linux_conda_cuda:
           name: testrun_conda_cuda_py37_cu102_pyt170
           context: DOCKERHUB_TOKEN
